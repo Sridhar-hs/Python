@@ -1,0 +1,4 @@
+int -> integer
+float -> decimal point numbers
+char -> character
+string -> 
