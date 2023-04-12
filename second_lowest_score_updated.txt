@@ -1,0 +1,27 @@
+#program to check the second lowest score
+
+if __name__ == '__main__':
+    li=[]
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        li.append([name,score])
+
+    res=[]
+    for i in range(0,len(li)):
+        res.append(li[i][1])
+    m=set(res)
+    n=list(m)
+    n.sort()
+    s = n[1]
+    
+    x=[]
+    for i in range(0,len(li)):
+        if li[i][1]==s:
+            x.append(li[i][0])
+    x.sort()
+    
+    
+    for i in range(0,len(x)):
+        print(x[i],"\n",end="")
+    
