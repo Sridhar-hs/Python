@@ -1,0 +1,14 @@
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+    x=set(arr)
+    r=list(x)
+    y=len(r)
+    z=[]
+    for i in range(0,y):
+        for j in range(0,y):
+            if r[i]<=r[j]:
+                z.append(r[i])
+                break
+    si=len(z)
+    print(z[si-2])

@@ -1,0 +1,29 @@
+#program to find the second lowest score in the entered list
+
+#asking the user for number of records
+n= int(input("Enter the number: "))
+li=[]
+
+#taking the input from the user and storing in the list li=[]
+for i in range(0,n):
+    name=input("Enter the name: ")
+    marks=float(input("Enter the marks"))
+    li.append([name,marks])		#[[name,marks],[name1,marks1]]
+# print(li)
+
+#taking marks seperately and storing in the res=[] list
+res=[]
+for i in range(0,n):
+        res.append(li[i][1])
+res.sort()			#sorting the marks in the ascending order
+# print(res)
+
+s = res[1]			#taking the second lowest score from the list
+
+#comparing the second lowest marks with the original list and displaying the names
+for i in range(0,n):
+    if li[i][1]==s:
+        print(li[i][0])
+
+
+
