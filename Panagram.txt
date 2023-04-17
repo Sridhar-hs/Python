@@ -1,0 +1,22 @@
+# #to find panagram or not
+
+
+# def panagram(str):
+#     z=[]
+#     for i in sen:
+#         z.append(i)
+#     print(z)
+#     count=0
+#     for i in range(0,len(z)):
+#         for j in range(0,len(z)):
+#             if z[i]==z[j]:
+#                 count+=1
+#         if count>1:
+#             print("Not a panagram")
+#             break
+#         else:
+#             print("Its a panagram")
+#             break
+#
+# sen = input("Enter the sentence")
+# print(panagram(sen))
